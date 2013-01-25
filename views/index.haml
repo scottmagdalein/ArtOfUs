@@ -1,0 +1,48 @@
+%html
+  %head
+    %title This is Art of Us.
+  %body
+    #content
+      %h1 This is Art of Us.
+      %h2 A marriage training tool for couples, both married and engaged.
+      %form{ :action => "/section1", :method => "post" }
+        #leading
+          %h3 Lesson #1: Love is leading
+          %label{ :for => "1" } Some of the positive things I'm doing for my marriage today are:
+          %br
+          %input{ :type => "text", :name => "1", :class => "text", :tabindex => "1", :style => "width: 370px;" }
+          #checkboxes
+            %label{ :for => "2" } Which of these would fall under the definition of "leading God's Way"?
+            %ul{ :style => "list-style-type: none;" }
+              %li
+                %input.checkbox{ :type => "checkbox", :value => "Exerting power over your spouse" } Exerting power over your spouse
+              %li
+                %input.checkbox{ :type => "checkbox", :value => "Valuing your spouse’s opinion" } Valuing your spouse’s opinion
+              %li
+                %input.checkbox{ :type => "checkbox", :value => "Serving your spouse" } Serving your spouse
+              %li
+                %input.checkbox{ :type => "checkbox", :value => "Helping your spouse with the household tasks" } Helping your spouse with the household tasks
+              %li
+                %input.checkbox{ :type => "checkbox", :value => "Putting your spouse down when in a group of friends" } Putting your spouse down when in a group of friends
+        %br
+        %label{ :for => "3" } Husband, what are some specific things you can do as a "warrior" in your marriage?
+        %br
+        %input{ :type => "text", :name => "3", :class => "text", :tabindex => "3", :style => "width: 370px;" }
+        %br
+        %label{ :for => "4" } Wife, what are some ways you see your husband as a warrior today?
+        %br
+        %input{ :type => "text", :name => "4", :class => "text", :tabindex => "4", :style => "width: 370px;" }
+        %br
+        %label{ :for => "5" } List three ways you can be a servant leader to your spouse.
+        %br
+        %textarea{ :type => "text", :name => "5", :class => "text", :tabindex => "5", :cols => "50", :rows => "3" }
+        %br
+        %label{ :for => "6" } Husband, what is your first step to begin leading in love that you can take today?
+        %br
+        %input{ :type => "text", :name => "6", :class => "text", :tabindex => "6", :style => "width: 370px;" }
+        %br
+        %label{ :for => "7" } Wife, how will you encourage your husband as he strives to lead "God's Way"?
+        %br
+        %input{ :type => "text", :name => "7", :class => "text", :tabindex => "7", :style => "width: 370px;" }
+        %br
+        %input{ :type => "submit", :value => "Send", :class => "button" }
