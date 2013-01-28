@@ -5,29 +5,30 @@
     #content
       %h1 This is Art of Us.
       %h2 A marriage training tool for couples, both married and engaged.
-      %form{ :action => "/section1", :method => "post" }
+      %form{ :action => "/template", :method => "post" }
         #leading
           %h3 Lesson #1: Love is leading
           %label{ :for => "1" } Some of the positive things I'm doing for my marriage today are:
           %br
-          %input{ :type => "text", :name => "1", :class => "text", :tabindex => "1", :style => "width: 370px;" }
-          #checkboxes
-            %label{ :for => "2" } Which of these would fall under the definition of "leading God's Way"?
-            %ul{ :style => "list-style-type: none;" }
-              %li
-                %input.checkbox{ :type => "checkbox", :value => "Exerting power over your spouse" } Exerting power over your spouse
-              %li
-                %input.checkbox{ :type => "checkbox", :value => "Valuing your spouse’s opinion" } Valuing your spouse’s opinion
-              %li
-                %input.checkbox{ :type => "checkbox", :value => "Serving your spouse" } Serving your spouse
-              %li
-                %input.checkbox{ :type => "checkbox", :value => "Helping your spouse with the household tasks" } Helping your spouse with the household tasks
-              %li
-                %input.checkbox{ :type => "checkbox", :value => "Putting your spouse down when in a group of friends" } Putting your spouse down when in a group of friends
+          %input{ :type => "text", :name => "one", :class => "text", :tabindex => "1", :style => "width: 370px;" }
+          -#
+            #checkboxes
+              %label{ :for => "two" } Which of these would fall under the definition of "leading God's Way"?
+              %ul{ :style => "list-style-type: none;" }
+                %li
+                  %input.checkbox{ :type => "checkbox", :value => "Exerting power over your spouse" } Exerting power over your spouse
+                %li
+                  %input.checkbox{ :type => "checkbox", :value => "Valuing your spouse’s opinion" } Valuing your spouse’s opinion
+                %li
+                  %input.checkbox{ :type => "checkbox", :value => "Serving your spouse" } Serving your spouse
+                %li
+                  %input.checkbox{ :type => "checkbox", :value => "Helping your spouse with the household tasks" } Helping your spouse with the household tasks
+                %li
+                  %input.checkbox{ :type => "checkbox", :value => "Putting your spouse down when in a group of friends" } Putting your spouse down when in a group of friends
         %br
-        %label{ :for => "3" } Husband, what are some specific things you can do as a "warrior" in your marriage?
+        %label{ :for => "three" } Husband, what are some specific things you can do as a "warrior" in your marriage?
         %br
-        %input{ :type => "text", :name => "3", :class => "text", :tabindex => "3", :style => "width: 370px;" }
+        %input{ :type => "text", :name => "three", :class => "text", :tabindex => "3", :style => "width: 370px;" }
         %br
         %label{ :for => "4" } Wife, what are some ways you see your husband as a warrior today?
         %br
