@@ -7,7 +7,7 @@ get '/' do
   haml :index
 end
 
-post '/template' do
+post '/finish' do
 	@one = params["one"]
 	@three = params["three"]
 
