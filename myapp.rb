@@ -11,7 +11,9 @@ post '/template' do
 	@one = params["one"]
 	@three = params["three"]
 	haml :template
+end
 
+post '/template' do
 	options = {
 		:to => "scottmagdalein@gmail.com",
 		:from => "no-reply@herokuapp.com",
