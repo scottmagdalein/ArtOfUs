@@ -15,8 +15,8 @@ post '/template' do
 		:to => "scottmagdalein@gmail.com",
 		:from => "no-reply@herokuapp.com",
 		:subject => "You finished Love is Leading at ArtOfUs",
-		:body => "This is plain text.",
-		# :html_body => (haml :template),
+		# :body => "This is plain text.",
+		:html_body => (haml :template),
 		:via => :smtp,
 		:via_options => {
 			:address => 'smtp.mandrillapp.com',
