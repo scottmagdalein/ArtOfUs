@@ -8,8 +8,6 @@ get '/' do
 end
 
 post '/template' do
-	@one = params["one"]
-	@three = params["three"]
 
 	options = {
 		:to => "scottmagdalein@gmail.com",
@@ -29,7 +27,10 @@ post '/template' do
 		}
 	}
 
+	@one = params["one"]
+	@three = params["three"]
+	haml :template
+
 	Pony.mail(options)
 
-	haml :template
 end
