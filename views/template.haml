@@ -1,7 +1,13 @@
 %html
 	%head
+		%title This is Art of Us.
+		%link{ :href => "http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic", :rel => "stylesheet", :type => "text/css" }/
+		%link{ :href => "/stylesheets/style.css", :rel => "stylesheet", :type => "text/css" }
 	%body
-		%h1 This is the body of the email.
-		%h3 This is the rest of the email.
-		%p This is the answer to the first question: #{@one}
-		%p This is the answer to the third question: #{@three}
+		#container
+			%h1 This is the body of the email.
+			%h3 This is the rest of the email.
+			%p.question Some of the positive things I'm doing for my marriage today are:
+			%p.answer #{@one}
+			%p.question Husband, what are some specific things you can do as a "warrior" in your marriage?
+			%p.answer #{@two}

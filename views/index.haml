@@ -1,49 +1,72 @@
 %html
   %head
     %title This is Art of Us.
+    %link{ :href => "http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic", :rel => "stylesheet", :type => "text/css" }/
+    %link{ :href => "/stylesheets/style.css", :rel => "stylesheet", :type => "text/css" }
   %body
-    #content
+    #container
       %h1 This is Art of Us.
       %h2 A marriage training tool for couples, both married and engaged.
       %form{ :action => "/finish", :method => "post" }
         #leading
           %h3 Lesson #1: Love is leading
-          %label{ :for => "1" } Some of the positive things I'm doing for my marriage today are:
+          %label{ :for => "one" } Some of the positive things I'm doing for my marriage today are:
           %br
-          %input{ :type => "text", :name => "one", :class => "text", :tabindex => "1", :style => "width: 370px;" }
-          -#
-            #checkboxes
-              %label{ :for => "two" } Which of these would fall under the definition of "leading God's Way"?
-              %ul{ :style => "list-style-type: none;" }
-                %li
-                  %input.checkbox{ :type => "checkbox", :value => "Exerting power over your spouse" } Exerting power over your spouse
-                %li
-                  %input.checkbox{ :type => "checkbox", :value => "Valuing your spouse’s opinion" } Valuing your spouse’s opinion
-                %li
-                  %input.checkbox{ :type => "checkbox", :value => "Serving your spouse" } Serving your spouse
-                %li
-                  %input.checkbox{ :type => "checkbox", :value => "Helping your spouse with the household tasks" } Helping your spouse with the household tasks
-                %li
-                  %input.checkbox{ :type => "checkbox", :value => "Putting your spouse down when in a group of friends" } Putting your spouse down when in a group of friends
+          %input{ :type => "text", :name => "one", :class => "text" }
+          %br
+          %label{ :for => "two" } Husband, what are some specific things you can do as a "warrior" in your marriage?
+          %br
+          %input{ :type => "text", :name => "two", :class => "text" }
+          %br
+          %label{ :for => "three" } Wife, what are some ways you see your husband as a warrior today?
+          %br
+          %input{ :type => "text", :name => "three", :class => "text" }
+          %br
+          %label{ :for => "four" } List three ways you can be a servant leader to your spouse.
+          %br
+          %textarea{ :type => "text", :name => "four", :class => "text", :rows => "3" }
+          %br
+          %label{ :for => "five" } Husband, what is your first step to begin leading in love that you can take today?
+          %br
+          %input{ :type => "text", :name => "five", :class => "text" }
+          %br
+          %label{ :for => "six" } Wife, how will you encourage your husband as he strives to lead "God's Way"?
+          %br
+          %input{ :type => "text", :name => "six", :class => "text" }
         %br
-        %label{ :for => "three" } Husband, what are some specific things you can do as a "warrior" in your marriage?
-        %br
-        %input{ :type => "text", :name => "three", :class => "text", :tabindex => "3", :style => "width: 370px;" }
-        %br
-        %label{ :for => "4" } Wife, what are some ways you see your husband as a warrior today?
-        %br
-        %input{ :type => "text", :name => "4", :class => "text", :tabindex => "4", :style => "width: 370px;" }
-        %br
-        %label{ :for => "5" } List three ways you can be a servant leader to your spouse.
-        %br
-        %textarea{ :type => "text", :name => "5", :class => "text", :tabindex => "5", :cols => "50", :rows => "3" }
-        %br
-        %label{ :for => "6" } Husband, what is your first step to begin leading in love that you can take today?
-        %br
-        %input{ :type => "text", :name => "6", :class => "text", :tabindex => "6", :style => "width: 370px;" }
-        %br
-        %label{ :for => "7" } Wife, how will you encourage your husband as he strives to lead "God's Way"?
-        %br
-        %input{ :type => "text", :name => "7", :class => "text", :tabindex => "7", :style => "width: 370px;" }
-        %br
+        #verb
+          %h3 Lesson #2: Love is a Verb
+          %label{ :for => "seven" } Finish this statement: It is hard for me to love my spouse when...
+          %br
+          %input{ :type => "text", :name => "seven", :class => "text" }
+          %br
+          %label{ :for => "eight" } Define "love based on feelings" in five words or less.
+          %br
+          %input{ :type => "text", :name => "eight", :class => "text" }
+          %br
+          %label{ :for => "nine" } Define "love based on commitment" in five words or less.
+          %br
+          %input{ :type => "text", :name => "nine", :class => "text" }
+          %br
+          %label{ :for => "ten" } What do you think is the main difference between the two?
+          %br
+          %input{ :type => "text", :name => "ten", :class => "text" }
+          %br
+          %label{ :for => "eleven" } List three ways that you purposefully can show love to your spouse.
+          %br
+          %textarea{ :type => "text", :name => "eleven", :class => "text", :rows => "3" }
+          %br
+          %label{ :for => "twelve" } What is the first step in turning your love for your spouse into a verb?
+          %br
+          %input{ :type => "text", :name => "twelve", :class => "text" }
+          %br
+        #finish
+          %label{ :for => "email" } What is your email?
+          %br
+          %input{ :type => "email", :name => "email", :class => "text" }
+          %br
+          %label{ :for => "spouse_email" } What is your spouse's email?
+          %br
+          %input{ :type => "text", :name => "spouse_email", :class => "text" }
+          %br
         %input{ :type => "submit", :value => "Send", :class => "button" }

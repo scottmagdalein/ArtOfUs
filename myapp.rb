@@ -3,18 +3,33 @@ require 'sinatra'
 require 'haml'
 require 'pony'
 
+set :haml, :format => :html5
+
 get '/' do
   haml :index
 end
 
 post '/finish' do
 	@one = params["one"]
+	@two = params["two"]
 	@three = params["three"]
+	@four = params["four"]
+	@five = params["five"]
+	@six = params["six"]
+	@seven = params["seven"]
+	@eight = params["eight"]
+	@nine = params["nine"]
+	@ten = params{"ten"}
+	@eleven = params["eleven"]
+	@twelve = params["twelve"]
+	@email = params["email"]
+	@spouse_email = params["spouse_email"]
 
 	options = {
-		:to => "scottmagdalein@gmail.com",
+		:to => "#{@email}",
+		:cc => "#{@spouse_email}",
 		:from => "no-reply@herokuapp.com",
-		:subject => "You finished Love is Leading at ArtOfUs",
+		:subject => "You finished Redefining Love at ArtOfUs",
 		# :body => "This is plain text.",
 		:html_body => (haml :template),
 		:via => :smtp,

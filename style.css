@@ -1,19 +1,25 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+/*
+Errno::ENOENT: No such file or directory - style.scss
 
-#container {
-	width: 960px;
-	margin: 0 auto;
-}
-
-html {
-	font-family: Helvetica;
-	color: #676767;
-}
-
-form label {
-	font-size: 14px;
-	font-weight: 700;
-}
+Backtrace:
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:339:in `read'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/plugin.rb:107:in `method_missing'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/exec.rb:444:in `watch_or_update'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/exec.rb:307:in `process_result'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/exec.rb:41:in `parse'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/lib/sass/exec.rb:21:in `parse!'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.5/bin/sass:8:in `<top (required)>'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/bin/sass:19:in `load'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/bin/sass:19:in `<main>'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/scottmagdalein1/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - style.scss"; }
